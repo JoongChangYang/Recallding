@@ -12,7 +12,8 @@ class RCViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    
+    attribute()
+    setupUI()
   }
   
   func attribute() {

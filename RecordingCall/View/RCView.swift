@@ -9,6 +9,12 @@
 import UIKit
 
 class RCView: UIView {
+  
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    attribute()
+    setupUI()
+  }
 
   func attribute() {
     backgroundColor = RCColor.background

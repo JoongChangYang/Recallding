@@ -14,5 +14,13 @@ class RCPlayerView: RCView {
   private let rewindButton = UIButton()
   private let slipButton = UIButton()
   private let slider = UISlider()
+  
+  override func attribute() {
+    super.attribute()
+  }
+  
+  override func setupUI() {
+    super.setupUI()
+  }
 
 }
