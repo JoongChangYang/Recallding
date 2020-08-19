@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -54,7 +54,6 @@
 				138210FA48DCCD94D909CF26 /* Pods-RecordingCall.debug.xcconfig */,
 				C68B4251D163D95074AF4AB1 /* Pods-RecordingCall.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -95,9 +94,9 @@
 		31701F0224ED860000A3BB76 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				31E188C824ED917400FC6C6C /* RCViewController.swift */,
 				31701F0524ED863B00A3BB76 /* RCNavigationController.swift */,
 				31E188C124ED88EE00FC6C6C /* RCMainViewController.swift */,
-				31E188C824ED917400FC6C6C /* RCViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
