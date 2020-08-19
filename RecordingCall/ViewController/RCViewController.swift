@@ -15,5 +15,13 @@ class RCViewController: UIViewController {
     
   }
   
+  func attribute() {
+    view.backgroundColor = RCColor.background
+  }
+  
+  func setupUI() {
+    
+  }
+  
   
 }

@@ -11,7 +11,7 @@ import UIKit
 class RCView: UIView {
 
   func attribute() {
-    backgroundColor = .white
+    backgroundColor = RCColor.background
   }
   
   func setupUI() {
