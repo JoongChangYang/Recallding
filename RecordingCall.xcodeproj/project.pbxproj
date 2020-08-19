@@ -16,9 +16,12 @@
 		31E188C724ED916500FC6C6C /* RCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E188C624ED916500FC6C6C /* RCView.swift */; };
 		31E188C924ED917400FC6C6C /* RCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E188C824ED917400FC6C6C /* RCViewController.swift */; };
 		31E188CC24ED91BD00FC6C6C /* RCColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E188CB24ED91BD00FC6C6C /* RCColor.swift */; };
+		C8C9D678A0E387B44A70E56B /* Pods_RecordingCall.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A83728609E44BD799D2F214 /* Pods_RecordingCall.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		138210FA48DCCD94D909CF26 /* Pods-RecordingCall.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordingCall.debug.xcconfig"; path = "Target Support Files/Pods-RecordingCall/Pods-RecordingCall.debug.xcconfig"; sourceTree = "<group>"; };
+		1A83728609E44BD799D2F214 /* Pods_RecordingCall.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecordingCall.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31701EEB24ED77F200A3BB76 /* RecordingCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordingCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31701EEE24ED77F200A3BB76 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31701EF724ED77F500A3BB76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		31E188C624ED916500FC6C6C /* RCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCView.swift; sourceTree = "<group>"; };
 		31E188C824ED917400FC6C6C /* RCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCViewController.swift; sourceTree = "<group>"; };
 		31E188CB24ED91BD00FC6C6C /* RCColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCColor.swift; sourceTree = "<group>"; };
+		C68B4251D163D95074AF4AB1 /* Pods-RecordingCall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordingCall.release.xcconfig"; path = "Target Support Files/Pods-RecordingCall/Pods-RecordingCall.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8C9D678A0E387B44A70E56B /* Pods_RecordingCall.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		215217A688C94D29809ABD4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				138210FA48DCCD94D909CF26 /* Pods-RecordingCall.debug.xcconfig */,
+				C68B4251D163D95074AF4AB1 /* Pods-RecordingCall.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		31701EE224ED77F100A3BB76 = {
 			isa = PBXGroup;
 			children = (
 				31701EED24ED77F200A3BB76 /* RecordingCall */,
 				31701EEC24ED77F200A3BB76 /* Products */,
+				215217A688C94D29809ABD4B /* Pods */,
+				73459CA8E8AA7522530125C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +133,14 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		73459CA8E8AA7522530125C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A83728609E44BD799D2F214 /* Pods_RecordingCall.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +148,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 31701EFF24ED77F500A3BB76 /* Build configuration list for PBXNativeTarget "RecordingCall" */;
 			buildPhases = (
+				853FB2BB2559ADF698096489 /* [CP] Check Pods Manifest.lock */,
 				31701EE724ED77F200A3BB76 /* Sources */,
 				31701EE824ED77F200A3BB76 /* Frameworks */,
 				31701EE924ED77F200A3BB76 /* Resources */,
+				3361776BA8A1921F5ED1193E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -180,6 +207,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3361776BA8A1921F5ED1193E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecordingCall/Pods-RecordingCall-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RecordingCall/Pods-RecordingCall-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RecordingCall/Pods-RecordingCall-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		853FB2BB2559ADF698096489 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RecordingCall-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		31701EE724ED77F200A3BB76 /* Sources */ = {
@@ -326,6 +395,7 @@
 		};
 		31701F0024ED77F500A3BB76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 138210FA48DCCD94D909CF26 /* Pods-RecordingCall.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -345,6 +415,7 @@
 		};
 		31701F0124ED77F500A3BB76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C68B4251D163D95074AF4AB1 /* Pods-RecordingCall.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
