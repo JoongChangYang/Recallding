@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  RCMainViewController.swift
 //  RecordingCall
 //
 //  Created by 양중창 on 2020/08/20.
@@ -8,12 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class RCMainViewController: UIViewController {
+  
   override func viewDidLoad() {
     super.viewDidLoad()
   }
-
-
+  
 }
-
