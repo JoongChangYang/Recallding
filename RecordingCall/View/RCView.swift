@@ -1,5 +1,5 @@
 //
-//  RCMainViewController.swift
+//  RCView.swift
 //  RecordingCall
 //
 //  Created by 양중창 on 2020/08/20.
@@ -8,10 +8,13 @@
 
 import UIKit
 
-class RCMainViewController: RCViewController {
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
+class RCView: UIView {
+
+  func attribute() {
+    backgroundColor = .white
   }
   
+  func setupUI() {
+    
+  }
 }

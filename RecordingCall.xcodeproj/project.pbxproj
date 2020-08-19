@@ -12,6 +12,10 @@
 		31701EFB24ED77F500A3BB76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31701EF924ED77F500A3BB76 /* LaunchScreen.storyboard */; };
 		31701F0624ED863B00A3BB76 /* RCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31701F0524ED863B00A3BB76 /* RCNavigationController.swift */; };
 		31E188C224ED88EE00FC6C6C /* RCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E188C124ED88EE00FC6C6C /* RCMainViewController.swift */; };
+		31E188C524ED910500FC6C6C /* RCPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E188C424ED910500FC6C6C /* RCPlayerView.swift */; };
+		31E188C724ED916500FC6C6C /* RCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E188C624ED916500FC6C6C /* RCView.swift */; };
+		31E188C924ED917400FC6C6C /* RCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E188C824ED917400FC6C6C /* RCViewController.swift */; };
+		31E188CC24ED91BD00FC6C6C /* RCColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E188CB24ED91BD00FC6C6C /* RCColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		31701EFC24ED77F500A3BB76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31701F0524ED863B00A3BB76 /* RCNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCNavigationController.swift; sourceTree = "<group>"; };
 		31E188C124ED88EE00FC6C6C /* RCMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCMainViewController.swift; sourceTree = "<group>"; };
+		31E188C424ED910500FC6C6C /* RCPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCPlayerView.swift; sourceTree = "<group>"; };
+		31E188C624ED916500FC6C6C /* RCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCView.swift; sourceTree = "<group>"; };
+		31E188C824ED917400FC6C6C /* RCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCViewController.swift; sourceTree = "<group>"; };
+		31E188CB24ED91BD00FC6C6C /* RCColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,9 +62,11 @@
 		31701EED24ED77F200A3BB76 /* RecordingCall */ = {
 			isa = PBXGroup;
 			children = (
+				31E188CA24ED91AF00FC6C6C /* Util */,
 				31701F0424ED860D00A3BB76 /* Model */,
 				31701F0324ED860700A3BB76 /* ViewModel */,
 				31701F0224ED860000A3BB76 /* ViewController */,
+				31E188C324ED90DD00FC6C6C /* View */,
 				31701EEE24ED77F200A3BB76 /* AppDelegate.swift */,
 				31701EF724ED77F500A3BB76 /* Assets.xcassets */,
 				31701EF924ED77F500A3BB76 /* LaunchScreen.storyboard */,
@@ -70,6 +80,7 @@
 			children = (
 				31701F0524ED863B00A3BB76 /* RCNavigationController.swift */,
 				31E188C124ED88EE00FC6C6C /* RCMainViewController.swift */,
+				31E188C824ED917400FC6C6C /* RCViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -86,6 +97,23 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		31E188C324ED90DD00FC6C6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				31E188C624ED916500FC6C6C /* RCView.swift */,
+				31E188C424ED910500FC6C6C /* RCPlayerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		31E188CA24ED91AF00FC6C6C /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				31E188CB24ED91BD00FC6C6C /* RCColor.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -159,7 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				31701F0624ED863B00A3BB76 /* RCNavigationController.swift in Sources */,
+				31E188C724ED916500FC6C6C /* RCView.swift in Sources */,
 				31E188C224ED88EE00FC6C6C /* RCMainViewController.swift in Sources */,
+				31E188C924ED917400FC6C6C /* RCViewController.swift in Sources */,
+				31E188C524ED910500FC6C6C /* RCPlayerView.swift in Sources */,
+				31E188CC24ED91BD00FC6C6C /* RCColor.swift in Sources */,
 				31701EEF24ED77F200A3BB76 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
