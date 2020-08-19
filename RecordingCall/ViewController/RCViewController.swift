@@ -20,9 +20,8 @@ class RCViewController: UIViewController {
     view.backgroundColor = RCColor.background
   }
   
-  func setupUI() {
-    
-  }
+  func setupUI() { }
+  
   
   
 }

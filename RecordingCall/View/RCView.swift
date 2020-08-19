@@ -15,12 +15,15 @@ class RCView: UIView {
     attribute()
     setupUI()
   }
-
+  
+  required init?(coder: NSCoder) {
+    fatalError("init(coder:) has not been implemented")
+  }
+  
+  
   func attribute() {
     backgroundColor = RCColor.background
   }
   
-  func setupUI() {
-    
-  }
+  func setupUI() { }
 }
