@@ -93,7 +93,11 @@ playground.xcworkspace
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 # Pods/
 # Add this line if you want to avoid checking in source code from the Xcode workspace
-*.xcworkspacei
+# *.xcworkspacei
+
+# 내가 추가한 파일
+*.xcworkspace
+Podfile.lock
 
 # Carthage
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
