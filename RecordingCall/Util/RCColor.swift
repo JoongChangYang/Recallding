@@ -9,5 +9,6 @@
 import UIKit
 
 enum RCColor {
-  static var background = UIColor.white
+  static let background = UIColor.white
+  static let controller = #colorLiteral(red: 0, green: 1, blue: 0.4088452483, alpha: 1)
 }
