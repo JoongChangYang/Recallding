@@ -9,6 +9,7 @@
 import UIKit
 import SnapKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
   
@@ -16,15 +17,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     let window = UIWindow(frame: UIScreen.main.bounds)
-    let rootViewController = RCNavigationController(rootViewController: RCMainViewController())
+    let rootViewController = RCNavigationController(rootViewController: RCRecordViewController())
     window.rootViewController = rootViewController
     window.makeKeyAndVisible()
     self.window = window
     return true
   }
   
+  func applicationDidEnterBackground(_ application: UIApplication) {
+    print(#function)
+  }
   
+  func applicationWillTerminate(_ application: UIApplication) {
+    print(#function)
+  }
   
+  func applicationDidBecomeActive(_ application: UIApplication) {
+    print(#function)
+  }
+  
+  func applicationWillResignActive(_ application: UIApplication) {
+    print(#function)
+    
+  }
   
 }
 
