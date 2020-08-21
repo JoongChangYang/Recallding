@@ -11,7 +11,10 @@
 		31701EF824ED77F500A3BB76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31701EF724ED77F500A3BB76 /* Assets.xcassets */; };
 		31701EFB24ED77F500A3BB76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31701EF924ED77F500A3BB76 /* LaunchScreen.storyboard */; };
 		31701F0624ED863B00A3BB76 /* RCNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31701F0524ED863B00A3BB76 /* RCNavigationController.swift */; };
-		31E188C224ED88EE00FC6C6C /* RCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E188C124ED88EE00FC6C6C /* RCMainViewController.swift */; };
+		3194890024EF67FF0022E7DC /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319488FF24EF67FF0022E7DC /* Recording.swift */; };
+		3194890324EF759E0022E7DC /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194890224EF759E0022E7DC /* UIViewControllerExtension.swift */; };
+		3194890524F01BCB0022E7DC /* RCRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194890424F01BCB0022E7DC /* RCRecordViewController.swift */; };
+		31E188C224ED88EE00FC6C6C /* RCContentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E188C124ED88EE00FC6C6C /* RCContentListViewController.swift */; };
 		31E188C524ED910500FC6C6C /* RCPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E188C424ED910500FC6C6C /* RCPlayerView.swift */; };
 		31E188C724ED916500FC6C6C /* RCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E188C624ED916500FC6C6C /* RCView.swift */; };
 		31E188C924ED917400FC6C6C /* RCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E188C824ED917400FC6C6C /* RCViewController.swift */; };
@@ -28,7 +31,10 @@
 		31701EFA24ED77F500A3BB76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31701EFC24ED77F500A3BB76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31701F0524ED863B00A3BB76 /* RCNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCNavigationController.swift; sourceTree = "<group>"; };
-		31E188C124ED88EE00FC6C6C /* RCMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCMainViewController.swift; sourceTree = "<group>"; };
+		319488FF24EF67FF0022E7DC /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
+		3194890224EF759E0022E7DC /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		3194890424F01BCB0022E7DC /* RCRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCRecordViewController.swift; sourceTree = "<group>"; };
+		31E188C124ED88EE00FC6C6C /* RCContentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCContentListViewController.swift; sourceTree = "<group>"; };
 		31E188C424ED910500FC6C6C /* RCPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCPlayerView.swift; sourceTree = "<group>"; };
 		31E188C624ED916500FC6C6C /* RCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCView.swift; sourceTree = "<group>"; };
 		31E188C824ED917400FC6C6C /* RCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +84,7 @@
 		31701EED24ED77F200A3BB76 /* RecordingCall */ = {
 			isa = PBXGroup;
 			children = (
+				3194890124EF758B0022E7DC /* Extension */,
 				31E188CA24ED91AF00FC6C6C /* Util */,
 				31701F0424ED860D00A3BB76 /* Model */,
 				31701F0324ED860700A3BB76 /* ViewModel */,
@@ -96,7 +103,8 @@
 			children = (
 				31E188C824ED917400FC6C6C /* RCViewController.swift */,
 				31701F0524ED863B00A3BB76 /* RCNavigationController.swift */,
-				31E188C124ED88EE00FC6C6C /* RCMainViewController.swift */,
+				31E188C124ED88EE00FC6C6C /* RCContentListViewController.swift */,
+				3194890424F01BCB0022E7DC /* RCRecordViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -111,8 +119,17 @@
 		31701F0424ED860D00A3BB76 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				319488FF24EF67FF0022E7DC /* Recording.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3194890124EF758B0022E7DC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3194890224EF759E0022E7DC /* UIViewControllerExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		31E188C324ED90DD00FC6C6C /* View */ = {
@@ -254,13 +271,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3194890524F01BCB0022E7DC /* RCRecordViewController.swift in Sources */,
 				31701F0624ED863B00A3BB76 /* RCNavigationController.swift in Sources */,
 				31E188C724ED916500FC6C6C /* RCView.swift in Sources */,
-				31E188C224ED88EE00FC6C6C /* RCMainViewController.swift in Sources */,
+				3194890324EF759E0022E7DC /* UIViewControllerExtension.swift in Sources */,
+				31E188C224ED88EE00FC6C6C /* RCContentListViewController.swift in Sources */,
 				31E188C924ED917400FC6C6C /* RCViewController.swift in Sources */,
 				31E188C524ED910500FC6C6C /* RCPlayerView.swift in Sources */,
 				31E188CC24ED91BD00FC6C6C /* RCColor.swift in Sources */,
 				31701EEF24ED77F200A3BB76 /* AppDelegate.swift in Sources */,
+				3194890024EF67FF0022E7DC /* Recording.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -398,7 +418,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3S767N4AG9;
+				DEVELOPMENT_TEAM = G4MM77V7NH;
 				INFOPLIST_FILE = RecordingCall/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -418,7 +438,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3S767N4AG9;
+				DEVELOPMENT_TEAM = G4MM77V7NH;
 				INFOPLIST_FILE = RecordingCall/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
