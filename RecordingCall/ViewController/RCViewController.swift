@@ -6,18 +6,14 @@
 //  Copyright © 2020 didwndckd. All rights reserved.
 //
 
-import AudioToolbox
 import UIKit
 
 class RCViewController: UIViewController {
-  
-  
   
   override func viewDidLoad() {
     super.viewDidLoad()
     attribute()
     setupUI()
-    test()
   }
   
   func attribute() {
@@ -25,11 +21,4 @@ class RCViewController: UIViewController {
   }
   
   func setupUI() { }
-  
-  private func test() {
-    
-  }
-  
-  
-  
 }
