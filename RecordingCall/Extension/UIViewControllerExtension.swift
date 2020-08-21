@@ -6,4 +6,11 @@
 //  Copyright © 2020 didwndckd. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension UIViewController {
+  private func noticeAlert(_ title: String? = nil, _ message: String? = nil, _ preferredStyle: UIAlertController.Style = .alert) {
+    let alertController = UIAlertController(title: title, message: message, preferredStyle: preferredStyle)
+    present(alertController, animated: true)
+  }
+}
