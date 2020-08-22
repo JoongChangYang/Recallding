@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RecordButton: UIButton {
+class RCRecordButton: UIButton {
   
   override var isSelected: Bool {
     didSet {
