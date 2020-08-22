@@ -14,6 +14,7 @@
 		3194890024EF67FF0022E7DC /* Recording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 319488FF24EF67FF0022E7DC /* Recording.swift */; };
 		3194890324EF759E0022E7DC /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194890224EF759E0022E7DC /* UIViewControllerExtension.swift */; };
 		3194890524F01BCB0022E7DC /* RCRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194890424F01BCB0022E7DC /* RCRecordViewController.swift */; };
+		3194890724F17FF50022E7DC /* RCRecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3194890624F17FF50022E7DC /* RCRecordButton.swift */; };
 		31E188C224ED88EE00FC6C6C /* RCContentListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E188C124ED88EE00FC6C6C /* RCContentListViewController.swift */; };
 		31E188C524ED910500FC6C6C /* RCPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E188C424ED910500FC6C6C /* RCPlayerView.swift */; };
 		31E188C724ED916500FC6C6C /* RCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31E188C624ED916500FC6C6C /* RCView.swift */; };
@@ -34,6 +35,7 @@
 		319488FF24EF67FF0022E7DC /* Recording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording.swift; sourceTree = "<group>"; };
 		3194890224EF759E0022E7DC /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		3194890424F01BCB0022E7DC /* RCRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCRecordViewController.swift; sourceTree = "<group>"; };
+		3194890624F17FF50022E7DC /* RCRecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCRecordButton.swift; sourceTree = "<group>"; };
 		31E188C124ED88EE00FC6C6C /* RCContentListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCContentListViewController.swift; sourceTree = "<group>"; };
 		31E188C424ED910500FC6C6C /* RCPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCPlayerView.swift; sourceTree = "<group>"; };
 		31E188C624ED916500FC6C6C /* RCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RCView.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			children = (
 				31E188C624ED916500FC6C6C /* RCView.swift */,
 				31E188C424ED910500FC6C6C /* RCPlayerView.swift */,
+				3194890624F17FF50022E7DC /* RCRecordButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				3194890324EF759E0022E7DC /* UIViewControllerExtension.swift in Sources */,
 				31E188C224ED88EE00FC6C6C /* RCContentListViewController.swift in Sources */,
 				31E188C924ED917400FC6C6C /* RCViewController.swift in Sources */,
+				3194890724F17FF50022E7DC /* RCRecordButton.swift in Sources */,
 				31E188C524ED910500FC6C6C /* RCPlayerView.swift in Sources */,
 				31E188CC24ED91BD00FC6C6C /* RCColor.swift in Sources */,
 				31701EEF24ED77F200A3BB76 /* AppDelegate.swift in Sources */,
